@@ -21,6 +21,6 @@ jobs:
         uses: ./.github/packageManager
         with:
           token: ${{ secrets.DLTK }}
-          project: ${{ github.workspace }}Project/SampleProjectWithDep.4DProject
+          project: ${{ github.workspace }}/Project/SampleProjectWithDep.4DProject
       - name: Find
         run: find . ./Components
