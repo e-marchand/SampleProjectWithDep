@@ -15,6 +15,7 @@ jobs:
         with:
           repository: 4d/packageManager
           token: ${{ secrets.PAT_TOKEN }}
+          ref: 'action'
           path: .github/packageManager
       - name: Fetch
         uses: ./.github/packageManager
