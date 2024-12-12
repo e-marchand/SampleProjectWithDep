@@ -15,13 +15,12 @@ jobs:
         with:
           repository: 4d/packageManager
           token: ${{ secrets.PAT_TOKEN }}
-          ref: 'main'
           path: .github/packageManager
       - name: Fetch
         uses: ./.github/packageManager
         with:
-          token: ${{ secrets.DLTK }}
+          token: ${{ secrets.DLTK }} # to download tool4d
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - name: Find
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} # to fetch repository, request api
+      - name: LogDownloadedFiles
         run: find ./Components
