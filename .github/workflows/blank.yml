@@ -21,6 +21,6 @@ jobs:
         with:
           token: ${{ secrets.DLTK }} # to download tool4d, used to execute 4D code to fetch
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} # to fetch repository, GitHub release api
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }} # to fetch repository, GitHub release api
       - name: LogDownloadedFiles
         run: find ./Components # log downloaded files
