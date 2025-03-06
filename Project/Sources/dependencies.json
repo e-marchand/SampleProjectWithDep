@@ -15,6 +15,10 @@
 		"SampleTestPrivateProject": {
             		"github": "e-marchand/SampleTestPrivateProject",
             		"version": "latest"
+		},
+		"4D Widgets": {
+			"github": "4d/4D-Widgets",
+			"version": "20R8.*"
 		}
 	}
 }
