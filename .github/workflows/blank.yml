@@ -20,7 +20,6 @@ jobs:
           repository: 4d/packageManager
           token: ${{ secrets.PAT_TOKEN }} # a personal access token to download private repo "pm"
           path: .github/packageManager
-          ref: testWindow
       - name: Fetch
         uses: ./.github/packageManager
         with:
