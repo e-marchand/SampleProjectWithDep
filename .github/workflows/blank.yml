@@ -28,4 +28,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }} # to fetch repository, GitHub release api
       - name: LogDownloadedFiles
+        shell: bash
         run: find ./Components # log downloaded files
